@@ -1,0 +1,124 @@
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  color: #374151;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  padding: 8px 10px;
+}
+
+.nav-link:hover {
+  background-color: #e2e8f0;
+}
+
+.nav-link.active {
+  background-color: #2563eb;
+  color: white;
+}
+
+#mainContent {
+  overflow-y: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  min-height: 100%;
+  transition: all 0.2s ease;
+}
+
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.btn {
+  border-radius: 6px;
+}
+
+
+/* ===========================
+   DASHBOARD CUSTOM STYLES
+=========================== */
+.dashboard-container {
+  padding: 30px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dashboard-subtitle {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.stat-info h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.stat-info p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Warna ikon */
+.bg-blue { background-color: #2563eb; }
+.bg-green { background-color: #10b981; }
+.bg-yellow { background-color: #f59e0b; }
+.bg-red { background-color: #ef4444; }
+
+/* Animasi sederhana */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

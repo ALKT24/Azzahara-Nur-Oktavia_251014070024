@@ -1,0 +1,32 @@
+# --- PHP / Laragon project ---
+# Dependency & vendor folders
+vendor/
+composer.lock
+
+# Environment & config files
+.env
+.env.local
+.env.production
+.env.backup
+
+# Logs & cache
+storage/
+bootstrap/cache/
+*.log
+
+# System / IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary & backup files
+*.bak
+*.tmp
+
+# Node (if you use npm or gulp)
+node_modules/
+npm-debug.log
+
+# Laravel or Framework specific
+public/storage/
